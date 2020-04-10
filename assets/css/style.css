@@ -1,0 +1,7 @@
+.container-fluid {
+    background-color: bisque;
+}
+.card {
+    display:block;
+    background-color:lightgrey;
+}

@@ -21,19 +21,15 @@
 	</head>
 
 	<body>
-		<!-- UPON A FRESH, LOCALSTORAGE FREE LOAD OF THE PAGE THE ONLY THINGS ORIGINALLY DISPLAYED
-    ARE THE JUMBOTRON AND THE SEARCH BAR -->
-
-		<!-- jumbotron    
-    I want to include cute little weather monsters  -->
+	
 		<div class="jumbotron">
 			<h1 class="display-4 text-center">Weather Dashboard</h1>
 		</div>
 
-		<div class="container">
+		<div class="container-fluid">
 			<!-- ROW ONE COLUMN ONE-->
 			<div class="row r1">
-				<div class="col-md-4 c1">
+				<div class="col-md-3 c1">
 					<!-- Left Side:
 					Search box and area to append searched terms buttons -->
 
@@ -52,7 +48,7 @@
 				</div>
 
 				<!-- ROW ONE COLUMN TWO -->
-				<div class="col-md-8 c2">
+				<div class="col-lg-8 c2">
 					<!-- COLUMN TWO ROW ONE-->
 
 					<!-- removed row -->
@@ -87,7 +83,7 @@
 						Five cards with each future day's information pulling up: 
 						date/weather icon/temp/ and humidity -->
 						<div class="col-md-2">
-							<div class="card" style="width: 8rem;">
+							<div class="card" style="width: 10rem;">
 								<div class="card-body">
 									<h5 class="card-title dateOne"></h5>
 									<p class="card-text iconOne"></p>
@@ -98,7 +94,7 @@
 						</div>
 
 						<div class="col-md-2">
-							<div class="card" style="width: 8rem;">
+							<div class="card" style="width: 10rem;">
 								<div class="card-body">
 									<h5 class="card-title dateTwo"></h5>
 									<p class="card-text iconTwo"></p>
@@ -109,7 +105,7 @@
 						</div>
 
 						<div class="col-md-2">
-							<div class="card" style="width: 8rem;">
+							<div class="card" style="width: 10rem;">
 								<div class="card-body">
 									<h5 class="card-title dateThree"></h5>
 									<p class="card-text iconThree"></p>
@@ -120,7 +116,7 @@
 						</div>
 
 						<div class="col-md-2">
-							<div class="card" style="width: 8rem;">
+							<div class="card" style="width: 10rem;">
 								<div class="card-body">
 									<h5 class="card-title dateFour"></h5>
 									<p class="card-text iconFour"></p>
@@ -131,7 +127,7 @@
 						</div>
 
 						<div class="col-md-2">
-							<div class="card" style="width: 8rem;">
+							<div class="card" style="width: 10rem;">
 								<div class="card-body">
 									<h5 class="card-title dateFive"></h5>
 									<p class="card-text iconFive"></p>
@@ -162,6 +158,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="assets/javascript/script.js"></script>
+		<script src="weatherAPI.js"></script>
 	</body>
 </html>
