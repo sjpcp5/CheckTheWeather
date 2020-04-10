@@ -1,7 +1,7 @@
 # Weather Dashboard
 
 ## Description
-A web application that searches the weather of 200,000 locations in the world. Making call to Open Weather API rendering data to the document object model using JQUERY, Javascript, HTML, and CSS
+A web application that searches the weather of 200,000 locations in the world. Making a call to Open Weather API rendering data to the document object model using JQUERY, Javascript, HTML, and CSS
 
 ## Technologies
 
