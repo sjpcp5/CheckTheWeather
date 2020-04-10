@@ -11,7 +11,7 @@ A web application that searches the weather of 200,000 locations in the world. M
 * Open Weather API
 
 ## Weather API App
-![WeatherAPI Image](CheckTheWeather/assets/images/weatherAPI.png)
+![WeatherAPI Image](./assets/images/weatherAPI.png)
 
 
 ## User Story
