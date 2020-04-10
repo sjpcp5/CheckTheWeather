@@ -1,20 +1,3 @@
-/////
-// OVERVIEW
-/////
-
-// UPON A FRESH, LOCALSTORAGE FREE LOAD OF THE PAGE THE ONLY THINGS ORIGINALLY DISPLAYED
-// ARE THE JUMBOTRON AND THE SEARCH BAR OR
-// ## Bonus
-// * Use the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
-//  to add the user's current location to the initial landing page.
-
-// * You will need to hardcode some of the parameters in the API's URL.
-// User input will determine some of the other parameters.
-// * Use `localStorage` to store any persistent data.
-
-
-// VARIABLES
-
 
 // This is our API key.
 const APIKey = "&appid=75b2fbaa50f250eede1bc522d3103ae4";
@@ -28,7 +11,7 @@ const citiesArray = JSON.parse(localStorage.getItem("cities")) || [];
 const m = moment();
 
 
-// ON LOAD
+// on loading
 
 
 $(document).ready(function() {
@@ -36,16 +19,6 @@ $(document).ready(function() {
 	fiveDay(city);
 	citySearch(city);
 });
-
-/////
-// FUNCTIONS
-/////
-
-/////
-// * Create multiple functions within your application to
-// handle the different parts of the dashboard:
-// * Current conditions
-/////
 
 function citySearch(city) {
 	// clear out previous city data
@@ -121,13 +94,13 @@ function citySearch(city) {
 	});
 }
 
-/////
-// * Create multiple functions within your application to
-// handle the different parts of the dashboard:
-// * UV index
-/////
 
-// // RECIEVES LAT/LON
+/*  * Create multiple functions within your application to
+ handle the different parts of the dashboard:
+ * UV index
+
+
+Recieves lateral and longitude location */
 
 function uvIndex(lon, lat) {
 	// SEARCHES
@@ -168,13 +141,11 @@ function uvIndex(lon, lat) {
 	});
 }
 
-/////
-// RENDER BUTTONS CREATES NEW BUTTONS EACH TIME A CITY IS
-// SEARCHED FOR, AND ASSIGNS INFORMATION TO THE BUTTONS.
-// HOWEVER, IT PRINTS THEM SIDE BY SIDE CURRENTLY,
-// SHOULD WE USE A LIST CARD GROUP TO CREATE THE TOP
-// TO BOTTOM LOOK?
-/////
+
+
+/* Render buttons and searched city's information */
+
+
 
 function renderButtons() {
 	// Deleting the buttons prior to adding new movies
@@ -207,15 +178,15 @@ function renderButtons() {
 		citySearch(city);
 	});
 }
+/* 
 
-/////
-// * Include a 5-Day Forecast below the current weather conditions.
-// Each day for the 5-Day Forecast should display the following:
-//   * Date
-//   * Icon image (visual representation of weather conditions)
-//   * Temperature
-//   * Humidity
-/////
+* Include a 5-Day Forecast below the current weather conditions.
+Each day for the 5-Day Forecast should display the following:
+  * Date
+  * Icon image (visual representation of weather conditions)
+  * Temperature
+  * Humidity
+*/
 
 function fiveDay(city) {
 	let fiveFront = "https://api.openweathermap.org/data/2.5/forecast?q=";
@@ -414,9 +385,9 @@ function humidityAvg(x, y, z) {
 	return avgHum.toFixed(0);
 }
 
-/////
-// EVENTS
-/////
+
+// Events
+
 
 $("#add-city").on("click", function(event) {
 	event.preventDefault();

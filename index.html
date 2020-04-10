@@ -31,7 +31,7 @@
 			<div class="row r1">
 				<div class="col-md-3 c1">
 					<!-- Left Side:
-					Search box and area to append searched terms buttons -->
+					Search box and previous searches -->
 
 					<h4>Search for a City:</h4>
 					<form id="city-form">
@@ -41,7 +41,7 @@
 						</button>
 					</form>
 
-					<!-- Buttons will get dumped here: -->
+					<!-- search button -->
 					<div id="buttons-view" class="card" style="width: 18rem;">
 						<ul class="list-group list-group-flush"></ul>
 					</div>
@@ -53,11 +53,7 @@
 
 					<!-- removed row -->
 					<div class="r2a">
-						<!-- Right Side Top:
-						Display section for City, current date, weather icon (like cloud or something),
-						temp, humidity, wind speed, uv index. Based on what the uv index is it displays with
-						different CSS formatting. 
-						Border around this box -->
+						<!-- recently searched city of today's forecast -->
 
 						<h3 class="city"></h3>
 						<!--City, Date, Icon-->
@@ -78,10 +74,8 @@
 
 					<!-- COLUMN TWO ROW TWO -->
 					<div class="row r2b justify-content-between">
-						<!-- needs to be a row so that they sit side by side ! -->
-						<!-- Right side bottom:
-						Five cards with each future day's information pulling up: 
-						date/weather icon/temp/ and humidity -->
+					
+						<!-- 5day weather forecast -->
 						<div class="col-md-2">
 							<div class="card" style="width: 10rem;">
 								<div class="card-body">
