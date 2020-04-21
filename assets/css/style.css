@@ -1,7 +1,18 @@
 .container-fluid {
-    background-color: bisque;
+  background-color: bisque;
+  width: 100%;
 }
 .card {
-    display:block;
-    background-color:lightgrey;
+  display: inline-flexbox;
+  position: relative;
+  float: left;
+  background-color: lightgrey;
+}
+.card-title {
+  text-align: center;
+}
+.btn {
+  display: inline-flexbox;
+  position: relative;
+  float: center;
 }

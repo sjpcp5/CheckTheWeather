@@ -4,7 +4,7 @@ const queryURL = "https://api.openweathermap.org/data/2.5/weather?q=";
 
 const citiesArray = JSON.parse(localStorage.getItem("cities")) || [];
 
-const moment = moment();
+const timeDay = moment();
 
 $(document).ready(function() {
   let city = citiesArray[citiesArray.length - 1];
@@ -31,7 +31,7 @@ function citySearch(city) {
 
     let dateInfo = response.dt;
     console.log(dateInfo);
-    let currentDate = moment.unix(dateInfo).format("L");
+    let currentDate = moment.unix(dateInfo).formomentat("L");
     console.log("current date" + currentDate);
 
     let iconDummy = "https://openweathermap.org/img/wn/";
@@ -143,27 +143,27 @@ function fiveDay(city) {
     let dateOne = moment
       .unix(response.list[1].dt)
       .utc()
-      .format("L");
+      .format("dddd, L");
     $(".dateOne").append(dateOne);
     let dateTwo = moment
       .unix(response.list[9].dt)
       .utc()
-      .format("L");
+      .format("dddd, L");
     $(".dateTwo").append(dateTwo);
     let dateThree = moment
       .unix(response.list[17].dt)
       .utc()
-      .format("L");
+      .format("dddd, L");
     $(".dateThree").append(dateThree);
     let dateFour = moment
       .unix(response.list[25].dt)
       .utc()
-      .format("L");
+      .format("dddd, L");
     $(".dateFour").append(dateFour);
     let dateFive = moment
       .unix(response.list[33].dt)
       .utc()
-      .format("L");
+      .format("dddd, L");
     $(".dateFive").append(dateFive);
 
     let iconOne = $("<img>");
